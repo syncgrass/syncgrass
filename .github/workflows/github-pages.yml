@@ -3,33 +3,19 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Replace with your default branch if it's not 'main'
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js (if using a Node.js project; adjust if using a different static site generator)
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16' # Replace with the version required by your project
-
-      # Step 3: Install dependencies and build the site
-      - name: Install dependencies and build
-        run: |
-          npm install
-          npm run build # Replace with your build script
-
-      # Step 4: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # Replace with the directory containing your built site files
-          cname: syncgrass.com # Sets up the custom domain
+          publish_dir: ./ # Adjust to the path of your static site files
+          cname: syncgrass.com

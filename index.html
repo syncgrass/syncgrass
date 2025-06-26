@@ -16,177 +16,222 @@
     <script src="./js/main.js"></script>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo"><img src="./images/image.png" alt=""></a>
+    <!-- Modern Navbar -->
+    <header class="header modern-navbar">
+        <a href="#" class="logo"><img src="./images/image.png" alt="SyncGrass Logo"></a>
         <div class="fas fa-bars"></div>
         <nav class="navbar">
             <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#service">services</a></li>
-                <li><a href="#portfolio">projects</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="home">
-        <h1>Bring your Business Online</h1>
-        <h2>with SyncGrass Company Services</h2>
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
+    <!-- Hero Section -->
+    <section id="home" class="home modern-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="animated-headline">Empowering Your Digital Future</h1>
+            <h2 class="animated-subheadline">Innovative Solutions by SyncGrass Limited</h2>
+            <a href="#contact" class="cta-btn">Get Started</a>
+        </div>
+        <svg class="hero-wave" viewBox="0 0 1440 320"><path fill="#00bfff" fill-opacity="0.3" d="M0,224L48,197.3C96,171,192,117,288,117.3C384,117,480,171,576,197.3C672,224,768,224,864,197.3C960,171,1056,117,1152,122.7C1248,128,1344,192,1392,224L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
-    <section id="about" class="about">
-        <h1 class="heading">about us</h1>
-        <div class="row">
-            <div class="content">
-                <h3>We make creativity work for your brand!</h3>
-                <p>Ours is a team of creatives that is brainstorming on great ideas,<b> all. the. time.</b><br>
-                    With our skills put together, you get an ensemble capable of doing anything and everything your brand needs.</p>
-                <a href="#"><button class="btn">Read More</button></a>
+    <!-- About Section -->
+    <section id="about" class="about modern-section">
+        <div class="container">
+            <h1 class="heading">About Us</h1>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./images/pexels-andrea-piacquadio-745136.jpg" alt="About SyncGrass" class="about-img">
+                </div>
+                <div class="col-md-6">
+                    <h3>We make creativity work for your brand!</h3>
+                    <p>Our team of creatives is always brainstorming great ideas. With our skills combined, you get an ensemble capable of doing anything and everything your brand needs.</p>
+                    <a href="#services" class="btn">Our Services</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="pt-5 pb-5" style="background-color: #f2f2f2;">
+    <!-- Services Section -->
+    <section id="services" class="services modern-section">
+        <div class="container">
+            <h1 class="heading">Our Services</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 service-card">
+                    <div class="service-icon"><i class="fa fa-laptop-code"></i></div>
+                    <h4>Web App Development</h4>
+                    <p>Custom web development for both front-end and back-end. From enhancing existing apps to architecting enterprise solutions, our developers are up for the challenge.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 service-card">
+                    <div class="service-icon"><i class="fa fa-mobile-alt"></i></div>
+                    <h4>Mobile App Development</h4>
+                    <p>Expertise in creating multi-platform mobile apps for Android and iOS. We use the latest frameworks to deliver smooth, high-performance apps.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 service-card">
+                    <div class="service-icon"><i class="fa fa-desktop"></i></div>
+                    <h4>Desktop App Development</h4>
+                    <p>Our desktop app development services help you engage customers and increase visibility on all platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio modern-section">
+        <div class="container">
+            <h1 class="heading">Our Projects</h1>
+            <div class="row portfolio-grid">
+                <div class="col-md-4 portfolio-item">
+                    <a href="./images/img2.jpg" data-lightbox="portfolio"><img src="./images/img2.jpg" alt="Project 1"></a>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                    <a href="./images/img3.jpg" data-lightbox="portfolio"><img src="./images/img3.jpg" alt="Project 2"></a>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                    <a href="./images/pexels-vinicius-wiesehofer-1130624.jpg" data-lightbox="portfolio"><img src="./images/pexels-vinicius-wiesehofer-1130624.jpg" alt="Project 3"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team modern-section">
+        <div class="container">
+            <h1 class="heading">Meet the Team</h1>
+            <div class="row">
+                <div class="col-md-4 team-card">
+                    <div class="team-img"><img src="./images/testimonial-1.jpg" alt="Team Member 1"></div>
+                    <h4>Jane Doe</h4>
+                    <p>CEO & Founder</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 team-card">
+                    <div class="team-img"><img src="./images/testimonial-2.jpg" alt="Team Member 2"></div>
+                    <h4>John Smith</h4>
+                    <p>Lead Developer</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 team-card">
+                    <div class="team-img"><img src="./images/testimonial-3.jpg" alt="Team Member 3"></div>
+                    <h4>Mary Johnson</h4>
+                    <p>UI/UX Designer</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials modern-section">
+        <div class="container">
+            <h1 class="heading">What Our Clients Say</h1>
+            <div class="owl-carousel testimonials-carousel">
+                <div class="testimonial-item">
+                    <img src="./images/testimonial-4.jpg" alt="Client 1" class="testimonial-img">
+                    <h3>Client 1</h3>
+                    <h4>Company A</h4>
+                    <p>SyncGrass delivered our project on time and exceeded expectations. Highly recommended!</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="./images/testimonial-5.jpg" alt="Client 2" class="testimonial-img">
+                    <h3>Client 2</h3>
+                    <h4>Company B</h4>
+                    <p>Professional, creative, and reliable. Our go-to tech partner!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact modern-section">
+        <div class="container">
+            <h1 class="heading">Get in Touch</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711243.17762776!2d64.4398422293091!3d20.011408266548177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1644684739958!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="./contactme.php" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" required placeholder="Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" required placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" required placeholder="Your Message" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn contact-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer modern-footer">
         <div class="container">
             <div class="row">
-                <div class="section-head col-sm-12" id="service">
-                    <h1>Our Services</h1>
-                    <p>We help you to build high-quality digital solutions and products as well as deliver a wide range of related professional services. We are providing world-class service to our clients.</p>
+                <div class="col-md-4">
+                    <h4>About SyncGrass</h4>
+                    <p>8 Humphrey Eke Street, Woji Estate<br>Port Harcourt, Rivers, Nigeria</p>
+                    <p><strong>Phone:</strong> +2348166442613, +2348067214698</p>
+                    <p><strong>Email:</strong> info@syncgrass.com</p>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-laptop"></i></span>
-                        <h6>Web App Development</h6>
-                        <p>Our Custom Web Development Services Include Both Front-End And Back-End Development. Whether It Is Enhancing An Existing App Or Architecting An Enterprise App, Our Developers Are Up For The Challenge.</p>
-                    </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-android"></i></span>
-                        <h6>Mobile App Development</h6>
-                        <p>We Have Expertise In Creating Multi-Platform Mobile App Solutions For Both Android And IOS Devices. Using PhoneGap, Xamarin, And React Native, We Offer Custom Mobile App That Runs Smoothly On Multiple Platforms.</p>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/login?lang=en"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fab fa-google-plus-g"></i></a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-magic"></i></span>
-                        <h6>Desktop App Development</h6>
-                        <p>The Desktop App Development services we provide have their own set of charms. By taking our digital marketing services, our clients will be able to increase visibility and engage with their customers at the online platform.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="counters">
-        <div class="d-flex justify-content-around text-center">
-            <div>
-                <i class="fas fa-gift fa-4x"></i>
-                <div class="counter" data-target="8">8</div>
-                <h3>Projects</h3>
-            </div>
-            <div>
-                <i class="fas fa-users fa-4x"></i>
-                <div class="counter" data-target="6">6</div>
-                <h3>Clients</h3>
-            </div>
-            <div>
-                <i class="fas fa-award fa-4x"></i>
-                <div class="counter" data-target="1">1</div>
-                <h3>Countries</h3>
-            </div>
-        </div>
-    </section>
-
-    <div class="communicate">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <a href="#contact"><button class="btn">Contact Now</button></a>
-    </div>
-
-    <section id="contact" class="contact">
-        <h1 class="heading">get in touch</h1>
-    </section>
-    <div class="contact-in">
-        <div class="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711243.17762776!2d64.4398422293091!3d20.011408266548177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1644684739958!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="contact-form">
-            <form action="./contactme.php" method="POST">
-                <input type="text" name="name" placeholder="Name" class="contact-form-txt" required>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="contact-form-phone">
-                <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
-                <textarea placeholder="Your Message" name="message" class="contact-form-txtarea" required></textarea>
-                <input type="submit" value="Submit" name="submit" class="contact-form-btn">
-            </form>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>About Us</h4>
-                        <ul>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#about">About us</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#service">Our services</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#team">Team</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#contact">Contact</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem;">
-                        <h4>Contact Us</h4>
-                        <p>
-                            8 Humphrey Eke Street, Woji Estate <br>
-                            Port Harcourt, Rivers<br>
-                            Nigeria <br>
-                            <strong>Phone:</strong> +2348166442613, +2348067214698 <br>
-                            <strong>Email:</strong> info@syncgrass.com<br>
-                        </p>
-
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/"><i class="ion-logo-facebook"></i></a>
-                            <a href="https://twitter.com/login?lang=en"><i class="ion-logo-twitter"></i></a>
-                            <a href="https://www.linkedin.com/"><i class="ion-logo-linkedin"></i></a>
-                            <a href="https://www.instagram.com/"><i class="ion-logo-instagram"></i></a>
-                            <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="ion-logo-googleplus"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-newsletter">
-                        <h4>Subscription</h4>
-                        <p>With Our Skills Put Together, You Get An Ensemble Capable Of Doing Anything And Everything Your Brand Needs. Subscribe Here To Get Our Latest Updates.</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit"  value="Subscribe">
-                        </form>
-                    </div>
+                    <form action="" method="post" class="footer-newsletter">
+                        <input type="email" name="email" placeholder="Subscribe for updates">
+                        <button type="submit" title="Subscribe"><i class="fa fa-paper-plane"></i></button>
+                    </form>
                 </div>
             </div>
-        </div>
-
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
-                    Copyright &copy; 2025 SyncGrass Limited. All Rights Reserved.
-                </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2025 SyncGrass Limited. All Rights Reserved.</p>
             </div>
         </div>
-    </div>
+    </footer>
 
     <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
     <script src="lib/jquery/jquery.min.js"></script>

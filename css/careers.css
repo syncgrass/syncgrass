@@ -36,6 +36,8 @@ body{
     height: 3rem;
     top: 0;
     left: 0;
+    border-radius: 0.5rem;
+    object-fit: contain;
 }
 
 .header .navbar ul{

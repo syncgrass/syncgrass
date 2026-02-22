@@ -73,6 +73,8 @@ body {
 }
 .header .logo img {
   height: 3.5rem;
+  border-radius: 0.5rem;
+  object-fit: contain;
 }
 .header-certifications {
   display: flex;
@@ -112,36 +114,64 @@ body {
   cursor: pointer;
 }
 
-/* Key Services Marquee - white row, scrolling services */
+/* Key Services Marquee - GIS Transport style: white bar, black text, full visibility */
 .services-marquee {
   background: #fff;
-  padding: 0.65rem 0;
+  padding: 1rem 0;
+  min-height: 4.5rem;
   overflow: hidden;
   position: fixed;
   top: 5.5rem;
   left: 0;
   right: 0;
   z-index: 999;
-  border-bottom: 1px solid rgba(74, 124, 47, 0.2);
-  box-shadow: 0 1px 4px rgba(46, 125, 50, 0.06);
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .marquee-wrapper {
   width: 100%;
   overflow: hidden;
   position: relative;
+  white-space: nowrap;
+  flex: 1;
+  padding: 0.5rem 0;
+}
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4rem;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #fff 30%, transparent);
+}
+.marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #fff 30%, transparent);
 }
 .marquee-content {
   display: inline-flex;
   align-items: center;
-  animation: marquee-scroll 25s linear infinite;
-  -webkit-animation: marquee-scroll 25s linear infinite;
+  animation: marquee-scroll 22s linear infinite;
+  -webkit-animation: marquee-scroll 22s linear infinite;
   will-change: transform;
-  padding-right: 3rem;
+  padding-right: 4rem;
+  min-width: max-content;
+  line-height: 2;
+  padding-top: 0.1rem;
 }
 @media (prefers-reduced-motion: no-preference) {
   .marquee-content {
-    animation: marquee-scroll 25s linear infinite;
-    -webkit-animation: marquee-scroll 25s linear infinite;
+    animation: marquee-scroll 22s linear infinite;
+    -webkit-animation: marquee-scroll 22s linear infinite;
   }
 }
 .marquee-content:hover {
@@ -149,19 +179,21 @@ body {
   -webkit-animation-play-state: paused;
 }
 .marquee-item {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: var(--secondary);
-  padding: 0 1rem;
+  color: #222;
+  padding: 0 1.5rem;
   flex-shrink: 0;
   white-space: nowrap;
-  line-height: 1.5;
+  line-height: 2;
+  letter-spacing: 0.01em;
 }
 .marquee-separator {
-  color: var(--primary);
-  opacity: 0.6;
-  font-size: 0.6rem;
+  color: #999;
+  font-size: 0.5rem;
   flex-shrink: 0;
+  margin: 0 0.25rem;
+  vertical-align: middle;
 }
 @keyframes marquee-scroll {
   0% { transform: translate3d(0, 0, 0); }
@@ -174,7 +206,7 @@ body {
 
 /* Hero Carousel Section - blends into content */
 .hero-carousel-section {
-  margin-top: 8.75rem;
+  margin-top: 9.25rem;
   position: relative;
 }
 .hero-carousel-section::after {
@@ -493,34 +525,57 @@ body {
   .services .service-card { flex: 1 1 22%; min-width: 260px; }
 }
 
-/* Portfolio Section */
+/* Portfolio Section - 3 per row, styled */
 .portfolio-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .portfolio-item {
   background: #fff;
-  border-radius: 1.25rem;
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(74, 124, 47, 0.06);
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(46, 125, 50, 0.08);
+  border: 1px solid rgba(74, 124, 47, 0.08);
   overflow: hidden;
-  transition: all var(--section-transition);
-  width: 300px;
-  margin-bottom: 2rem;
+  transition: all 0.35s ease;
+  position: relative;
+}
+.portfolio-item a {
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
 .portfolio-item img {
   width: 100%;
+  height: 260px;
+  object-fit: cover;
   display: block;
-  transition: transform 0.3s;
+  transition: transform 0.4s ease;
+}
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(46, 125, 50, 0.75);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
 }
 .portfolio-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(46, 125, 50, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(46, 125, 50, 0.15);
 }
 .portfolio-item:hover img {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 /* Team Section */
@@ -782,10 +837,10 @@ input[type="submit"]:hover {
   .header-certifications { display: none; }
   .top-contact-bar span { font-size: 0.85rem; margin: 0 0.5rem; }
   .about .row, .services .row, .team .row, .contact .row { flex-direction: column; }
-  .portfolio-grid { flex-direction: column; align-items: center; }
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
   .services .row { gap: 1rem; }
   .services .service-card { min-width: 220px; max-width: 100%; }
-  .hero-carousel-section { margin-top: 8.5rem; }
+  .hero-carousel-section { margin-top: 9rem; }
   .hero-carousel-section .hero-carousel-caption .animated-headline { font-size: 2.5rem; }
 }
 @media (max-width: 767px) {
@@ -795,8 +850,8 @@ input[type="submit"]:hover {
   .header .navbar ul { flex-direction: column; background: var(--brand-green-dark); position: absolute; top: 100%; right: 0; width: 220px; display: none; padding: 1rem; border-radius: 0 0 0 8px; }
   .header .navbar.nav-toggle ul { display: flex; }
   .header .fa-bars { display: block; }
-  .services-marquee { top: 5rem; padding: 0.6rem 0; }
-  .hero-carousel-section { margin-top: 7.5rem; }
+  .services-marquee { top: 5rem; padding: 0.9rem 0; min-height: 4rem; }
+  .hero-carousel-section { margin-top: 8rem; }
   .services .row { flex-direction: column; align-items: center; }
   .services .service-card { width: 100%; }
   .hero-carousel-section .carousel-control-prev { left: 0.5rem; }
@@ -805,13 +860,15 @@ input[type="submit"]:hover {
 @media (max-width: 575px) {
   .top-contact-bar { display: none; }
   .header.modern-navbar { top: 0; }
-  .services-marquee { top: 4rem; }
-  .hero-carousel-section { margin-top: 6rem; }
+  .services-marquee { top: 4rem; padding: 0.85rem 0; min-height: 3.75rem; }
+  .marquee-item { font-size: 0.9rem; padding: 0 1rem; }
+  .portfolio-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .portfolio-item img { height: 220px; }
+  .hero-carousel-section { margin-top: 6.5rem; }
   .hero-content { padding: 0 1rem; }
   .heading { font-size: 2rem; }
   .animated-headline { font-size: 2rem; }
   .about-img { margin-bottom: 2rem; }
-  .marquee-item { font-size: 0.85rem; padding: 0 0.75rem; }
   .hero-carousel-section .hero-carousel-caption .animated-headline { font-size: 1.75rem; }
   .hero-carousel-section .hero-carousel-caption .animated-subheadline { font-size: 1rem; }
   .hero-carousel-section .carousel-item img { min-height: 400px; height: 70vh; }

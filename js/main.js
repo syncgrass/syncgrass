@@ -1,11 +1,17 @@
 $(document).ready(function(){
 
-    /* Services marquee - ensure scroll animation runs */
+    /* Services marquee - ensure scrolling works */
     (function initMarquee() {
-        var marquee = document.querySelector('.marquee-content');
-        if (marquee) {
-            marquee.style.animationPlayState = 'running';
-            marquee.style.webkitAnimationPlayState = 'running';
+        var content = document.querySelector('.marquee-content');
+        var wrapper = document.querySelector('.marquee-wrapper');
+        if (!content || !wrapper) return;
+        var w = content.offsetWidth;
+        var vw = wrapper.offsetWidth;
+        if (w > vw) {
+            content.style.animationPlayState = 'running';
+            content.style.webkitAnimationPlayState = 'running';
+        } else {
+            content.style.animation = 'marquee-scroll 15s linear infinite';
         }
     })();
 

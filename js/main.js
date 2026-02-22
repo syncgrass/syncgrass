@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+    /* Services marquee - ensure scroll animation runs */
+    (function initMarquee() {
+        var marquee = document.querySelector('.marquee-content');
+        if (marquee) {
+            marquee.style.animationPlayState = 'running';
+            marquee.style.webkitAnimationPlayState = 'running';
+        }
+    })();
+
      $('.fa-bars').click(function(){
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
@@ -11,11 +20,11 @@ $(document).ready(function(){
 
         if($(window).scrollTop()>35)
         {
-            $('.header').css({'background':'#002e5f','box-shadow':'0 .2rem .5rem rgba(0,0,0,.4)'});
+            $('.header').css({'background':'#3d6b26','box-shadow':'0 .2rem .5rem rgba(0,0,0,.4)'});
         }
         else
         {
-            $('.header').css({'background':'none','box-shadow':'none'});
+            $('.header').css({'background':'#4a7c2f','box-shadow':'0 8px 32px 0 rgba(46, 125, 50, 0.15)'});
         }
     });
 

@@ -55,7 +55,7 @@ body{
 }
 
 .header .navbar ul li a:hover{
-    color: #00bfff;
+    color: #7cb342;
     text-decoration: underline;
 }
 
@@ -73,7 +73,7 @@ body{
 .home{
     min-height: 70vh;
     width: 100vw;
-    background-image: url(../images/img3.jpg);
+    background-image: url(../images/carousel-3.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@ body{
     padding-top: 6rem;
     display: inline-block;
     font-size: 3.5rem;
-    color: #002e5f;
+    color: #2e7d32;
     position: relative;
     letter-spacing: .2rem;
     margin: -2rem auto 2rem auto;
@@ -114,8 +114,8 @@ body{
     position: absolute;
     height: 2.5rem;
     width: 2.5rem;
-    border-top: .4rem solid #002e5f;
-    border-left: .4rem solid #002e5f;
+    border-top: .4rem solid #2e7d32;
+    border-left: .4rem solid #2e7d32;
 }
 
 .heading::before{
@@ -244,7 +244,7 @@ body{
             border-radius: 5rem;
             background: white;
             border-style: groove;
-            border-color: #002e5f;
+            border-color: #2e7d32;
             font-size: 1.5rem;
             cursor: pointer;
             height: 3.5rem;
@@ -257,7 +257,7 @@ body{
             letter-spacing: .1rem;
             opacity: .9;
             color: white;
-            background: #002e5f;
+            background: #2e7d32;
         }
 		.career-form-phone
 		{
@@ -285,7 +285,7 @@ body{
 }
 
 .footer .footer-top {
-    background: #002e5f;
+    background: #2e7d32;
     padding: 60px 0 30px 0;
 }
 
@@ -300,7 +300,7 @@ body{
     font-size: 18px;
     display: inline-block;
     background: #ffffff;
-    color: #00bfff;
+    color: #7cb342;
     line-height: 1;
     padding: 9px 0;
     margin-right: 4px;
@@ -311,7 +311,7 @@ body{
 }
 
 .footer .footer-top .social-links a:hover {
-    background: #00bfff;
+    background: #7cb342;
     color: #ffffff;
 }
 
@@ -363,7 +363,7 @@ body{
 }
 
 .footer .footer-top .footer-links ul a:hover {
-    color: #00bfff;
+    color: #7cb342;
 }
 
 .footer .footer-top .footer-contact p {
@@ -380,21 +380,20 @@ body{
 }
 
 .footer .footer-top .footer-newsletter input[type="submit"] {
-    border: 0;
+    border: 1px solid #7cb342;
     width: 40%;
     padding: 6px 0;
     text-align: center;
-    color: black;
-    border: 1px solid #ffffff;
-    background: #ffffff;
+    color: #ffffff;
+    background: #7cb342;
     transition: 0.3s;
     cursor: pointer;
 }
 
 .footer .footer-top .footer-newsletter input[type="submit"]:hover {
     color: #ffffff;
-    background: #00bfff;
-    border: 1px solid #00bfff;
+    background: #2e7d32;
+    border: 1px solid #2e7d32;
     letter-spacing: .2rem;
 }
 
@@ -412,7 +411,7 @@ body{
 .back-to-top {
     position: fixed;
     display: none;
-    background-color: #00bfff;
+    background-color: #7cb342;
     color: #ffffff;
     width: 45px;
     height: 45px;
@@ -429,8 +428,11 @@ body{
     color: #ffffff;
 }
 
+.back-to-top:hover {
+    background-color: #2e7d32;
+}
 .back-to-top i:hover {
-    color: black;
+    color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -462,7 +464,7 @@ body{
     }
 
     .header .fa-bars:hover{
-        color: #00bfff;
+        color: #7cb342;
     }
 
     .header .navbar{
@@ -630,7 +632,7 @@ body{
         border-radius: 5rem;
         background: white;
         border-style: groove;
-        border-color: #002e5f;
+        border-color: #2e7d32;
         font-size: 1.5rem;
         cursor: pointer;
         height: 3.5rem;
@@ -643,7 +645,7 @@ body{
         letter-spacing: .1rem;
         opacity: .9;
         color: white;
-        background: #002e5f;
+        background: #2e7d32;
     }
     .career-form-phone
     {

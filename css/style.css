@@ -855,18 +855,59 @@ body {
 }
 
 /* Partners Section */
-.partners-logos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
+.partners-intro {
+  text-align: center;
+  color: #555;
+  font-size: 1.05rem;
+  max-width: 640px;
+  margin: -0.5rem auto 2.5rem auto;
+  line-height: 1.6;
 }
-.partner-logo {
-  width: 120px;
-  height: auto;
-  border-radius: 0.5rem;
-  object-fit: contain;
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.partner-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(46,125,50,0.08);
+  border: 1px solid rgba(74,124,47,0.08);
+  transition: all 0.3s ease;
+}
+.partner-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(46,125,50,0.12);
+  border-color: rgba(74,124,47,0.15);
+}
+.partner-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1.25rem auto;
+  background: linear-gradient(135deg, rgba(124,179,66,0.15) 0%, rgba(46,125,50,0.1) 100%);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partner-icon i {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+.partner-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--secondary);
+  margin: 0 0 0.6rem 0;
+}
+.partner-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.55;
+  margin: 0;
 }
 
 /* Certifications Section */

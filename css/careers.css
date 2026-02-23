@@ -164,6 +164,9 @@ body{
 			padding: 15px;
             font-size: 1.5rem;
 		}
+		.radio-class + .career-form-experience {
+			margin-top: 1.5rem;
+		}
         .career-form-email
 		{
             margin-left: 2rem;
@@ -191,10 +194,11 @@ body{
 		{
             margin-left: 1rem;
 			width: 110%;
-            margin-top: -2rem;
-			height: 40px;
+            margin-top: 0.5rem;
+			min-height: 3rem;
+			height: auto;
 			color: #000;
-			margin-bottom: 5rem;
+			margin-bottom: 2rem;
 			padding: 15px;
 		}
         .radio
@@ -580,10 +584,11 @@ body{
     {
         margin-left: 0;
         width: 110%;
-        margin-top: -2.5rem;
+        margin-top: 0.5rem;
+        min-height: 3rem;
         height: auto;
         color: #000;
-        margin-bottom: auto;
+        margin-bottom: 2rem;
         padding: 15px;
     }
     .radio

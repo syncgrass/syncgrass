@@ -72,7 +72,7 @@ body {
   gap: 1.5rem;
 }
 .header .logo img {
-  height: 3.5rem;
+  height: 2.25rem;
   border-radius: 0.5rem;
   object-fit: contain;
 }
@@ -100,7 +100,7 @@ body {
 .header .navbar ul li a {
   color: #ffffff;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 19px;
   transition: color 0.2s;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -125,19 +125,22 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 260px;
+  min-width: 420px;
   background: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   list-style: none;
   margin: 0.5rem 0 0 0;
-  padding: 0.5rem 0;
+  padding: 0.75rem;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-8px);
   transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
   z-index: 1100;
   border: 1px solid rgba(74, 124, 47, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.5rem;
 }
 .nav-dropdown:hover .dropdown-menu {
   opacity: 1;
@@ -149,12 +152,14 @@ body {
 }
 .nav-dropdown .dropdown-menu a {
   display: block;
-  padding: 0.6rem 1.25rem;
+  padding: 0.7rem 1rem;
   color: #2e7d32 !important;
   font-size: 0.95rem !important;
   font-weight: 500 !important;
   text-shadow: none !important;
   transition: background 0.2s, color 0.2s;
+  border-radius: 0.35rem;
+  white-space: nowrap;
 }
 .nav-dropdown .dropdown-menu a:hover {
   background: rgba(124, 179, 66, 0.1);

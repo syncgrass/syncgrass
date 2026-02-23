@@ -1,18 +1,14 @@
 $(document).ready(function(){
 
-    /* Services marquee - ensure scrolling works */
+    /* Services marquee - clone content for seamless continuous scroll (left, appear from right) */
     (function initMarquee() {
+        var track = document.querySelector('.marquee-track');
         var content = document.querySelector('.marquee-content');
-        var wrapper = document.querySelector('.marquee-wrapper');
-        if (!content || !wrapper) return;
-        var w = content.offsetWidth;
-        var vw = wrapper.offsetWidth;
-        if (w > vw) {
-            content.style.animationPlayState = 'running';
-            content.style.webkitAnimationPlayState = 'running';
-        } else {
-            content.style.animation = 'marquee-scroll 15s linear infinite';
-        }
+        if (!track || !content) return;
+        /* Clone content and append for seamless loop */
+        var clone = content.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        track.appendChild(clone);
     })();
 
      $('.fa-bars').click(function(){

@@ -166,6 +166,126 @@ body {
   color: var(--primary) !important;
 }
 
+/* Products & Services megamenu - CypherCrescent style */
+.nav-dropdown-products .products-megamenu,
+.nav-dropdown-services .services-megamenu {
+  display: block !important;
+  min-width: 720px;
+  width: max-content;
+  max-width: 90vw;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  padding: 1.5rem 2rem 2rem;
+  grid-template-columns: none;
+}
+.nav-dropdown-products:hover .products-megamenu,
+.nav-dropdown-services:hover .services-megamenu {
+  transform: translateX(-50%) translateY(0);
+}
+.megamenu-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 1.25rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.megamenu-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem 2rem;
+}
+.megamenu-col {
+  min-width: 160px;
+  overflow: visible;
+}
+.products-megamenu .product-item,
+.services-megamenu .service-item {
+  display: block;
+  padding: 1rem 0;
+  text-decoration: none !important;
+  transition: background 0.2s;
+  border-radius: 0.35rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  white-space: normal !important;
+}
+.products-megamenu .product-item:last-child,
+.services-megamenu .service-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.products-megamenu .product-item h4,
+.services-megamenu .service-item h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2e7d32 !important;
+  margin: 0 0 0.5rem 0;
+  text-shadow: none !important;
+  display: block;
+  line-height: 1.3;
+}
+.products-megamenu .product-item p,
+.services-megamenu .service-item p {
+  font-size: 0.8rem;
+  color: #555 !important;
+  line-height: 1.5;
+  margin: 0;
+  display: block;
+}
+.products-megamenu .product-item:hover h4,
+.services-megamenu .service-item:hover h4 {
+  color: var(--primary) !important;
+}
+.products-megamenu .product-item:hover p,
+.services-megamenu .service-item:hover p {
+  color: #333 !important;
+}
+.megamenu-col.megamenu-featured {
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(0,0,0,0.08);
+  min-width: 180px;
+}
+.product-featured,
+.service-featured {
+  background: rgba(124, 179, 66, 0.06);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+}
+.product-featured h4,
+.service-featured h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2e7d32 !important;
+  margin: 0 0 0.5rem 0;
+  display: block;
+}
+.product-featured p,
+.service-featured p {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  display: block;
+}
+.megamenu-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #4a90d9;
+  color: #fff !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  text-decoration: none !important;
+  transition: background 0.2s;
+}
+.megamenu-cta:hover {
+  background: #3a7bc7;
+  color: #fff !important;
+}
+
 /* Key Services Marquee - GIS Transport style: white bar, black text, full visibility */
 .services-marquee {
   background: #fff;
@@ -1012,6 +1132,15 @@ input[type="submit"]:hover {
   .nav-dropdown .dropdown-menu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: none; background: transparent; margin: 0.5rem 0 0 1rem; padding: 0 0 0 0.5rem; border-left: 2px solid rgba(255,255,255,0.3); }
   .nav-dropdown .dropdown-menu a { color: rgba(255,255,255,0.9) !important; padding: 0.4rem 0; font-size: 0.9rem !important; }
   .nav-dropdown .dropdown-menu a:hover { background: transparent; color: var(--primary) !important; }
+  .nav-dropdown-products .products-megamenu,
+  .nav-dropdown-services .services-megamenu { min-width: auto; width: 100%; left: auto; transform: none; padding: 0.5rem 0 0 0.5rem; }
+  .megamenu-title { display: none; }
+  .megamenu-columns { grid-template-columns: 1fr; gap: 0.5rem; }
+  .megamenu-col.megamenu-featured { padding-left: 0; border-left: none; margin-top: 0.5rem; }
+  .product-item, .service-item, .product-featured, .service-featured { padding: 0.4rem 0; border-bottom: none; }
+  .product-item p, .service-item p, .product-featured p, .service-featured p { display: none; }
+  .product-item h4, .service-item h4, .product-featured h4, .service-featured h4 { font-size: 0.9rem !important; color: rgba(255,255,255,0.9) !important; }
+  .product-featured .megamenu-cta, .service-featured .megamenu-cta { display: inline-flex; margin-top: 0.5rem; }
   .header .fa-bars { display: block; }
   .services-marquee { top: 5rem; padding: 1rem 1rem; min-height: 4rem; }
   .hero-carousel-section { margin-top: 8rem; }

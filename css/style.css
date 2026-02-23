@@ -136,7 +136,7 @@ body {
   visibility: hidden;
   transform: translateY(-8px);
   transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
-  z-index: 1002;
+  z-index: 1100;
   border: 1px solid rgba(74, 124, 47, 0.1);
 }
 .nav-dropdown:hover .dropdown-menu {
@@ -386,7 +386,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(120deg, var(--primary) 0%, var(--secondary) 100%), url('../images/carousel-1.jpg') center/cover no-repeat;
+  background: linear-gradient(120deg, var(--primary) 0%, var(--secondary) 100%), url('/images/carousel-1.jpg') center/cover no-repeat;
   overflow: hidden;
 }
 .hero-overlay {
@@ -1035,14 +1035,14 @@ input[type="submit"]:hover {
 
 /* Service detail pages - shared styles */
 .service-page-hero { background: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%); padding: 6rem 0 4rem; color: #fff; text-align: center; }
-.service-page-hero.bg-land { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('../images/landparcels.jpg'); background-size: cover; background-position: center; }
-.service-page-hero.bg-map { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('../images/cadastral_mapping.png'); background-size: cover; background-position: center; }
-.service-page-hero.bg-satellite { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('../images/carousel-1.jpg'); background-size: cover; background-position: center; }
-.service-page-hero.bg-gis { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('../images/carousel-2.jpg'); background-size: cover; background-position: center; }
-.service-page-hero.bg-remote { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('../images/carousel-3.jpg'); background-size: cover; background-position: center; }
-.service-page-hero.bg-geodetic { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('../images/carousel-4.jpg'); background-size: cover; background-position: center; }
-.service-page-hero.bg-software { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('../images/carousel-2.jpg'); background-size: cover; background-position: center; }
-.service-page-hero.bg-training { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('../images/about-team.jpg'); background-size: cover; background-position: center; }
+.service-page-hero.bg-land { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('/images/landparcels.jpg'); background-size: cover; background-position: center; }
+.service-page-hero.bg-map { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('/images/cadastral_mapping.png'); background-size: cover; background-position: center; }
+.service-page-hero.bg-satellite { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('/images/carousel-1.jpg'); background-size: cover; background-position: center; }
+.service-page-hero.bg-gis { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('/images/carousel-2.jpg'); background-size: cover; background-position: center; }
+.service-page-hero.bg-remote { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('/images/carousel-3.jpg'); background-size: cover; background-position: center; }
+.service-page-hero.bg-geodetic { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('/images/carousel-4.jpg'); background-size: cover; background-position: center; }
+.service-page-hero.bg-software { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('/images/carousel-2.jpg'); background-size: cover; background-position: center; }
+.service-page-hero.bg-training { background-image: linear-gradient(135deg, rgba(46,125,50,0.9) 0%, rgba(61,107,38,0.95) 100%), url('/images/about-team.jpg'); background-size: cover; background-position: center; }
 .service-page-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
 .service-page-hero p { font-size: 1.1rem; opacity: 0.95; }
 .service-page-content { padding: 4rem 0; background: var(--bg); }

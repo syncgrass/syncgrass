@@ -110,51 +110,11 @@
     </section>
     <div class="career">
         <div class="career-form">
-            <form action="/careers.php" method="POST" enctype="multipart/form-data">
-                <input type="text" name="name" placeholder="Name" class="career-form-txt" required>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="career-form-phone">
-                <input type="email" name="email" placeholder="Email" class="career-form-email" required>
-                <div class="radio-class">
-                    <h2 class="name">Apply For Which Post?</h2>
-                <label class="radio">
-                  <input class="radio-one" type="radio" checked="checked" name="status" value="GIS Analyst">
-                  <span class="checkmark"></span>
-                  GIS Analyst
-                </label>
-                <label class="radio">
-                  <input class="radio-two" type="radio" name="status" value="Software Developer">
-                  <span class="checkmark"></span>
-                  Software Developer
-                </label>
-                <label class="radio">
-                  <input class="radio-three" type="radio" name="status" value="Surveyor / Geodetic Engineer">
-                  <span class="checkmark"></span>
-                  Surveyor / Geodetic Engineer
-                </label>
-                <label class="radio">
-                    <input class="radio-four" type="radio" name="status" value="Mapping & Cartography Specialist">
-                    <span class="checkmark"></span>
-                    Mapping & Cartography Specialist
-                  </label>
-                <label class="radio">
-                  <input class="radio-five" type="radio"  name="status" value="Remote Sensing Analyst">
-                  <span class="checkmark"></span>
-                  Remote Sensing Analyst
-                </label>
-                <label class="radio">
-                  <input class="radio-six" type="radio" name="status" value="Training & Capacity Building">
-                  <span class="checkmark"></span>
-                  Training & Capacity Building
-                </label>
-                </div>
-                <input type="number" id="experience" name="experience" required placeholder="Years of Experience" class="career-form-experience">
-                <textarea placeholder="Other Details" name="details" class="career-form-txtarea" required></textarea>
-                <div class="file">
-                    <h2 class="name">Upload Your Resume</h2>
-                    <input class="upload" type="file" name="fileToUpload" accept=".doc,.docx,.pdf"><br><br><br>
-                </div>
-                <input type="submit" value="Submit" name="submit" class="career-form-btn">
-            </form>
+            <div class="career-application">
+                <h2>Apply to join our team</h2>
+                <p>Email your CV and a short introduction to <a href="mailto:info@syncgrass.com">info@syncgrass.com</a>. Include the role you are applying for in the subject line.</p>
+                <a class="career-form-btn" href="mailto:info@syncgrass.com?subject=Career%20Application">Apply by email</a>
+            </div>
         </div>
     </div>
 

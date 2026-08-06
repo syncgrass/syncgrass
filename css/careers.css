@@ -96,6 +96,31 @@
 			flex: 50%;
 			text-align: left;
 		}
+		.career-application
+		{
+			padding: 3rem 2rem;
+			text-align: center;
+		}
+		.career-application h2
+		{
+			font-size: 2.4rem;
+			margin-bottom: 1rem;
+		}
+		.career-application p
+		{
+			font-size: 1.6rem;
+			line-height: 1.7;
+			margin: 0 auto 2rem;
+			max-width: 70rem;
+		}
+		.career-application .career-form-btn
+		{
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			margin-left: 0;
+			text-decoration: none;
+		}
 		.career-form-txt, .career-form-experience
 		{
             margin-left: 2rem;

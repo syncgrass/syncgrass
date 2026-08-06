@@ -1,10 +1,13 @@
-# IT-Company-Website
+# SyncGrass Website
 
-## Overview
+The public SyncGrass Limited website is a static site built with HTML, CSS, and JavaScript. It is deployed to GitHub Pages from the `main` branch.
 
-The project “IT Company Website” is a responsive website made using HTML, CSS, Bootstrap and JavaScript. As it is responsive, it works well on all devices. The website includes modules like About, Services, Portfolio, Team, Career, Contact and FAQ. Whenever anyone submits the contact form or career form, an email is sent on company’s email id so that they get notified about it and can communicate with that person soon. The website contains all the modules that meet the project requirement and is doing all the work accurately.
+## Local preview
 
-## Website Link
+Serve the repository root with any static HTTP server, then open `index.html` in a browser.
 
-Go check this website!!
-https://it-company-website-nu.vercel.app/
+## Contact
+
+Website contact and career enquiries use direct email links to `info@syncgrass.com`.
+
+See [DEPLOY.md](DEPLOY.md) for deployment notes.

@@ -1234,3 +1234,71 @@ input[type="submit"]:hover {
 .service-page-content .services-list li { padding: 0.5rem 0 0.5rem 1.5rem; position: relative; color: #333; font-size: 1rem; line-height: 1.6; }
 .service-page-content .services-list li::before { content: ''; position: absolute; left: 0; top: 0.9rem; width: 6px; height: 6px; background: var(--primary); border-radius: 50%; }
 @media (max-width: 768px) { .service-page-content .image-collage { grid-template-columns: repeat(2, 1fr); } .service-page-content .image-collage img { height: 150px; } .service-page-hero h1 { font-size: 1.75rem; } }
+
+/* ===== Products & Solutions Section ===== */
+.products-section {
+  background: var(--bg-alt);
+}
+.product-card-full {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem 2.2rem;
+  box-shadow: 0 4px 24px rgba(46,125,50,0.08);
+  border: 1px solid rgba(74,124,47,0.10);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card-full:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(46,125,50,0.14);
+}
+.product-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.3rem;
+}
+.product-card-icon {
+  font-size: 2rem;
+  color: var(--primary);
+}
+.product-card-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin: 0;
+}
+.product-card-subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
+.product-card-full > p {
+  color: #555;
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+.product-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+.product-features li {
+  padding: 0.35rem 0;
+  font-size: 0.93rem;
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.product-features li i {
+  color: var(--primary);
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .product-card-full { padding: 1.5rem; }
+  .product-card-header h3 { font-size: 1.25rem; }
+}
